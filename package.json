@@ -1,0 +1,30 @@
+{
+  "name": "lagom",
+  "version": "1.0.0",
+  "description": "A modern wordpress theme.",
+  "author": "Nik Payne",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nikpayne/lagom"
+  },
+  "bugs": {
+    "url": "https://github.com/nikpayne/lagom/issues"
+  },
+  "dependencies": {
+    "browser-sync": "*",
+    "browserify": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "minify": "*",
+    "minimist": "*",
+    "vinyl-transform": "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "*"
+  }
+}
