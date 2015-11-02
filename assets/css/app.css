@@ -1,0 +1,4 @@
+body{text-align:center;color:#fff;background:#00f}
+body .test{color:red}
+body.test{color:#fff}
+body a li{padding:0;margin:20rem}

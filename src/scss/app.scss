@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  color: white;
+  background: blue;
+  .test {
+    color: red;
+  }
+  &.test {
+    color: white;
+  }
+  /
+  a {
+    li {
+      padding: 0;
+      margin: 20rem;
+    }
+  }
+}
