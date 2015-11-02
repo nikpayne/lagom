@@ -1,0 +1,27 @@
+<svg class="array" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 282 231.225" enable-background="new 0 0 282 231.225" xml:space="preserve">
+<g id="Layer_1" display="none">
+	<g display="inline">
+		<rect y="7.779" width="282" height="44.999"/>
+		<rect y="93.113" width="282" height="45"/>
+		<rect y="178.446" width="282" height="44.999"/>
+	</g>
+</g>
+<g id="Layer_3" display="none">
+
+		<rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" display="inline" width="282.001" height="44.999"/>
+
+		<rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" display="inline" width="282" height="44.999"/>
+</g>
+<g id="Layer_4">
+	<rect x="33.166" y="7.779" width="58.333" height="58.332"/>
+	<rect x="111.833" y="7.779" width="58.333" height="58.332"/>
+	<rect x="190.5" y="7.779" width="58.333" height="58.331"/>
+	<rect x="33.166" y="86.446" width="58.333" height="58.332"/>
+	<rect x="111.833" y="86.447" width="58.333" height="58.332"/>
+	<rect x="190.5" y="86.447" width="58.333" height="58.332"/>
+	<rect x="33.167" y="165.112" width="58.333" height="58.332"/>
+	<rect x="111.834" y="165.112" width="58.333" height="58.332"/>
+	<rect x="190.501" y="165.112" width="58.333" height="58.332"/>
+</g>
+</svg>

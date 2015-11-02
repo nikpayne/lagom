@@ -1,14 +1,25 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	viewBox="0 0 282.001 234.053" enable-background="new 0 0 282.001 234.053" xml:space="preserve">
+<svg class="btn-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	viewBox="0 0 282 231.225" enable-background="new 0 0 282 231.225" xml:space="preserve">
 <g id="Layer_1" display="none">
 	<g display="inline">
-		<rect x="0" y="7.192" width="282" height="49"/>
-		<rect x="0" y="92.526" width="282" height="49"/>
-		<rect y="177.859" width="282" height="49"/>
+		<rect y="7.779" width="282" height="44.999"/>
+		<rect y="93.113" width="282" height="45"/>
+		<rect y="178.446" width="282" height="44.999"/>
 	</g>
 </g>
-<g id="Layer_2">
-	<rect x="0" y="92.525" transform="matrix(0.7071 0.7071 -0.7071 0.7071 124.047 -65.4258)" width="282" height="49"/>
-	<rect x="0" y="92.525" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -41.4518 133.9774)" width="282" height="49"/>
+<g id="Layer_3">
+	<rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" width="282.001" height="44.999"/>
+	<rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" width="282" height="44.999"/>
+</g>
+<g id="Layer_4" display="none">
+	<rect x="33.166" y="7.779" display="inline" width="58.333" height="58.332"/>
+	<rect x="111.833" y="7.779" display="inline" width="58.333" height="58.332"/>
+	<rect x="190.5" y="7.779" display="inline" width="58.333" height="58.331"/>
+	<rect x="33.166" y="86.446" display="inline" width="58.333" height="58.332"/>
+	<rect x="111.833" y="86.447" display="inline" width="58.333" height="58.332"/>
+	<rect x="190.5" y="86.447" display="inline" width="58.333" height="58.332"/>
+	<rect x="33.167" y="165.112" display="inline" width="58.333" height="58.332"/>
+	<rect x="111.834" y="165.112" display="inline" width="58.333" height="58.332"/>
+	<rect x="190.501" y="165.112" display="inline" width="58.333" height="58.332"/>
 </g>
 </svg>

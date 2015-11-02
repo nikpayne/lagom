@@ -15,12 +15,14 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Social</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="#">Dog</a></li>
       </ul>
     </nav>
     <div class="button">
       <a href="#">
-        <img class="btn-open" src="btn-hamburger.png" alt="">
-        <img class="btn-close" src="btn-close.png" alt="">
+        <?php include("src/img/array.svg"); ?>
+        <?php include("src/img/menu.svg"); ?>
+        <?php include("src/img/close.svg"); ?>
       </a>
     </div>
   </header>
@@ -70,6 +72,10 @@
       </div>
     </div>
   </div>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
   <script type="text/javascript">
   $(document).ready(function(){
     $('.btn-close').fadeOut(200);
