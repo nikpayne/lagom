@@ -9,7 +9,6 @@ var jshint = require('gulp-jshint'),
     minifyCSS = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    connect = require('gulp-connect-php'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
@@ -36,18 +35,22 @@ gulp.task('watch', function() {
   gulp.watch('./src/js/*.js', ['compile-js'] );
 });
 
-gulp.task('connect-sync', ['watch'], function() {
-  connect.server({}, function (){
-    browserSync({
-      proxy: '127.0.0.1:8000'
-    });
+gulp.task('connect-sync', function() {
+  var toWatch = [
+    './assets/app.css',
+    './assets/app.js',
+    './*.php'
+  ]
+  browserSync({
+    proxy: 'localhost/painpoints'
   });
   gulp.watch('**/*.php').on('change', function () { browserSync.reload(); });
-  gulp.watch('./src/scss/*.scss').on('change', function() { browserSync.reload(); });
-  gulp.watch('./src/js/*.js').on('change', function() { browserSync.reload(); });
 });
 
-gulp.task('default', ['connect-sync'] );
+gulp.task('default', ['compile-css', 'compile-js', 'connect-sync'], function() {
+  gulp.watch('./src/scss/*.scss', ['compile-css'] );
+  gulp.watch('./src/js/*.js', ['compile-js'] );
+});
 
 
 //-----------------------------------------------------------

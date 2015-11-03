@@ -11,18 +11,7 @@
   "bugs": {
     "url": "https://github.com/nikpayne/lagom/issues"
   },
-  "dependencies": {
-    "browser-sync": "*",
-    "browserify": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-sass": "*",
-    "gulp-uglify": "*",
-    "gulp-util": "*",
-    "minify": "*",
-    "minimist": "*",
-    "vinyl-transform": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.9.11",
     "gulp": "^3.9.0",

@@ -5,45 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
+    <script type="text/javascript">
+    // $(document).ready(function(){
+    //   $('.btn-close').fadeOut(200);
+    //   var open = false;
+    //   $('.button a').on('click',function(){
+    //     if(open == false){
+    //       $('.overlay, .btn-close').fadeIn(200);
+    //       $('nav ul li, .btn-open, .array').fadeOut(200);
+    //       open = true;
+    //     } else {
+    //       $('.overlay, .btn-close').fadeOut(200)
+    //       $('nav ul li, .btn-open, .array').fadeIn(200);
+    //       open = false;
+    //     }
+    //   });
+    //   $('.overlay').on('mouseup', function(){
+    //     $('.overlay, .btn-close').fadeOut(200);
+    //     $('nav ul li, .btn-open, .array').fadeIn(200);
+    //     open = false;
+    //   });
+    //   $('.wrap').on('mouseup', function(){
+    //     return false;
+    //   });
+    // })
+    </script>
   </head>
   <body <?php body_class(); ?> >
     <header class="row no-max pad main">
-      <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-      <a href="" class="nav-toggle"><span></span>Menu</a>
       <nav>
-        <h1 class="open"><a class="current" href=" <?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?> </a></h1>
-
-        <?php
-          $defaults = array(
-            'container' => false,
-            'theme_location' => 'primary-menu',
-            'menu_class' => 'no-bullet'
-          );
-
-          wp_nav_menu('defaults');
-        ?>
-
-<!--
-
-        <ul class="no-bullet">
-          <li class="current parent"><a href="<?php bloginfo('url'); ?>" class="current">Portfolio</a>
-            <ul class="sub-menu">
-              <li><a href="item.html">Portfolio Item</a></li>
-              <li><a href="item.html">Portfolio Item</a></li>
-              <li><a href="item.html">Portfolio Item</a></li>
-              <li><a href="item.html">Portfolio Item</a></li>
-
-            </ul>
-          </li>
-          <li class="parent">
-            <a href="blog.html">Blog</a>
-            <ul class="sub-menu">
-              <li><a href="single-post.html">Single Post</a></li>
-              <li><a href="author.html">Author Page</a></li>
-            </ul>
-          </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul> -->
+        <header>
+          <nav>
+            <?php
+              $defaults = array(
+                'container' => false,
+                'theme_location' => 'primary-menu',
+                'menu_class' => 'no-bullet'
+              );
+              wp_nav_menu('defaults');
+            ?>
+          </nav>
+          <div class="button">
+            <a href="#">
+              <?php include("src/img/array.svg"); ?>
+              <?php include("src/img/menu.svg"); ?>
+              <?php include("src/img/close.svg"); ?>
+            </a>
+          </div>
+        </header>
+        <div class="overlay">
+          <div class="wrap">
+            <?php
+              $defaults = array(
+                'container' => false,
+                'theme_location' => 'primary-menu',
+                'menu_class' => 'no-bullet'
+              );
+              wp_nav_menu('defaults');
+            ?>
+            <div class="social">
+              <!-- Social -->
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
