@@ -1,0 +1,20 @@
+{
+  "name": "Lagom",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nikpayne/lagom",
+  "authors": [
+    "Nik"
+  ],
+  "description": "\"A modern wordpress theme\"",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  }
+}

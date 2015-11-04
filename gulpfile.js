@@ -5,7 +5,8 @@ var jshint = require('gulp-jshint'),
     changed = require('gulp-changed'),
     plumber = require('gulp-plumber'),
     imagemin = require('gulp-imagemin'),
-    compileSASS = require('gulp-sass'),
+    gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
     minifyCSS = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -17,39 +18,44 @@ gulp.task('compile-js' , function() {
   .pipe(plumber())
   .pipe(uglify())
   .pipe(concat('app.js'))
-  .pipe(gulp.dest('./assets/js'));
+  .pipe(gulp.dest('./assets/js'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('compile-css', function() {
-  return gulp.src('./src/scss/*.scss')
-  .pipe(plumber())
-  .pipe(compileSASS())
+  var onError = function (err) {
+    gutil.beep();
+    this.emit('end');
+  };
+  return gulp.src('./src/scss/app.scss')
+  .pipe(plumber({ errorHandler: onError }))
+  .pipe(sass({
+    includePaths: [
+      './bower_components/foundation/scss'
+    ]
+  }).on('error', sass.logError))
   .pipe(minifyCSS({
     keepBreaks: true
   }))
   .pipe(gulp.dest('./assets/css'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {
-  gulp.watch('./src/scss/*.scss', ['compile-css'] );
-  gulp.watch('./src/js/*.js', ['compile-js'] );
+  gulp.watch('./src/scss/**/*.scss', ['compile-css'] );
+  gulp.watch('./src/js/**/*.js', ['compile-js'] );
 });
 
-gulp.task('connect-sync', function() {
-  var toWatch = [
-    './assets/app.css',
-    './assets/app.js',
-    './*.php'
-  ]
+gulp.task('browser-sync', function() {
   browserSync({
     proxy: 'localhost/painpoints'
   });
   gulp.watch('**/*.php').on('change', function () { browserSync.reload(); });
 });
 
-gulp.task('default', ['compile-css', 'compile-js', 'connect-sync'], function() {
-  gulp.watch('./src/scss/*.scss', ['compile-css'] );
-  gulp.watch('./src/js/*.js', ['compile-js'] );
+gulp.task('default', ['browser-sync'], function() {
+  gulp.watch(['./src/scss/partials/*.scss', './src/scss/*.scss'], ['compile-css'] );
+  gulp.watch('./src/js/**/*.js', ['compile-js'] );
 });
 
 
