@@ -3,8 +3,11 @@
 @import 'vendor/foundation/settings'; // src/scss... (locally defined settings)
 @import 'foundation'; // bower_components/foundation/scss... (def. in gulpfile)
 
-// PARTIALS --------------------------------------------------------------------
+// PARTIALS (SETTINGS) ---------------------------------------------------------
 
 @import "partials/colors";
 @import "partials/general";
-@import "partials/navigation";
+
+// PARTIALS --------------------------------------------------------------------
+
+@import "partials/nav";

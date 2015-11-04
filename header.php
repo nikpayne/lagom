@@ -6,67 +6,60 @@
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
     <script type="text/javascript">
-    // $(document).ready(function(){
-    //   $('.btn-close').fadeOut(200);
-    //   var open = false;
-    //   $('.button a').on('click',function(){
-    //     if(open == false){
-    //       $('.overlay, .btn-close').fadeIn(200);
-    //       $('nav ul li, .btn-open, .array').fadeOut(200);
-    //       open = true;
-    //     } else {
-    //       $('.overlay, .btn-close').fadeOut(200)
-    //       $('nav ul li, .btn-open, .array').fadeIn(200);
-    //       open = false;
-    //     }
-    //   });
-    //   $('.overlay').on('mouseup', function(){
-    //     $('.overlay, .btn-close').fadeOut(200);
-    //     $('nav ul li, .btn-open, .array').fadeIn(200);
-    //     open = false;
-    //   });
-    //   $('.wrap').on('mouseup', function(){
-    //     return false;
-    //   });
-    // })
+    (function($) {
+      $(document).ready(function(){
+        $('.btn-close').fadeOut(200);
+        var open = false;
+        $('.nav__icons a').on('click',function(){
+          console.log('clicking');
+          if(open == false){
+            $('.nav__overlay, .btn-close').fadeIn(200);
+            $('.btn-menu, .array').fadeOut(200);
+            open = true;
+          } else {
+            $('.nav__overlay, .btn-close').fadeOut(200)
+            $('.btn-menu').fadeIn(200);
+            open = false;
+          }
+        });
+        $('.nav__overlay').on('mouseup', function(){
+          $('.nav__overlay, .btn-close').fadeOut(200);
+          $('.btn-menu').fadeIn(200);
+          open = false;
+        });
+        $('.nav__wrap').on('mouseup', function(){
+          return false;
+        });
+      })
+    }(jQuery));
     </script>
   </head>
   <body <?php body_class(); ?> >
-    <header class="row no-max pad main">
-      <nav>
-        <header>
-          <nav>
-            <?php
-              $defaults = array(
-                'container' => false,
-                'theme_location' => 'primary-menu',
-                'menu_class' => 'no-bullet'
-              );
-              wp_nav_menu('defaults');
-            ?>
-          </nav>
-          <div class="button">
-            <a href="#">
-              <?php include("src/img/array.svg"); ?>
-              <?php include("src/img/menu.svg"); ?>
-              <?php include("src/img/close.svg"); ?>
-            </a>
-          </div>
-        </header>
-        <div class="overlay">
-          <div class="wrap">
-            <?php
-              $defaults = array(
-                'container' => false,
-                'theme_location' => 'primary-menu',
-                'menu_class' => 'no-bullet'
-              );
-              wp_nav_menu('defaults');
-            ?>
-            <div class="social">
+
+    <section class="nav">
+      <header class="nav__header">
+
+        <div class="nav__title">
+        </div>
+
+        <div class="nav__icons">
+          <a href="#">
+            <?php include("src/img/sort.svg"); ?>
+            <?php include("src/img/close.svg"); ?>
+            <?php include("src/img/menu.svg"); ?>
+          </a>
+        </div>
+
+        <div class="nav__overlay">
+          <div class="nav__wrap">
+            <nav class="nav__primary">
+              <?php wp_nav_menu(); ?>
+            </nav>
+            <div class="nav__social">
               <!-- Social -->
             </div>
           </div>
         </div>
-      </nav>
-    </header>
+
+      </header>
+    </section>
