@@ -8,23 +8,23 @@
     <script type="text/javascript">
     (function($) {
       $(document).ready(function(){
-        $('.btn-close').fadeOut(200);
+        $('.btn-close').fadeOut(150);
         var open = false;
-        $('.nav__icons a').on('click',function(){
+        $('.nav__icons svg').on('click',function(){
           console.log('clicking');
           if(open == false){
-            $('.nav__overlay, .btn-close').fadeIn(200);
-            $('.btn-menu, .array').fadeOut(200);
+            $('.nav__overlay, .btn-close').fadeIn(150);
+            $('.btn-menu, .array').fadeOut(150);
             open = true;
           } else {
-            $('.nav__overlay, .btn-close').fadeOut(200)
-            $('.btn-menu').fadeIn(200);
+            $('.nav__overlay, .btn-close').fadeOut(150)
+            $('.btn-menu').fadeIn(150);
             open = false;
           }
         });
         $('.nav__overlay').on('mouseup', function(){
-          $('.nav__overlay, .btn-close').fadeOut(200);
-          $('.btn-menu').fadeIn(200);
+          $('.nav__overlay, .btn-close').fadeOut(150);
+          $('.btn-menu').fadeIn(150);
           open = false;
         });
         $('.nav__wrap').on('mouseup', function(){
@@ -32,6 +32,50 @@
         });
       })
     }(jQuery));
+
+    (function($) {
+      $(window).scroll(function(event){
+        didScroll = true;
+      });
+      setInterval(function() {
+        if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+        }
+      }, 250);
+
+      var prevScroll = 0;
+
+      function hasScrolled() {
+        var currScroll = $(this).scrollTop();
+
+        if (currScroll > 54 && currScroll > prevScroll + 30) {
+          $('.nav__header').addClass('minimalist-mode');
+        } else if(currScroll < 54 || currScroll < prevScroll - 60) {
+          $('.nav__header').removeClass('minimalist-mode');
+        }
+        prevScroll = currScroll;
+      }
+    }(jQuery));
+
+    // (function($) {
+    //   var prevScroll = 0,
+    //       headerOffset = $('.nav').height();
+    //
+    //   $(window).scroll(function () {
+    //
+    //     var currScroll = $(this).scrollTop();
+    //
+    //     if (currScroll > headerOffset) {
+    //       if (currScroll > prevScroll) {
+    //         $('.nav__header').addClass('hide-nav');
+    //       } else {
+    //         $('.nav__header').removeClass('hide-nav');
+    //       }
+    //     }
+    //     prevScroll = currScroll;
+    //   });
+    // }(jQuery));
     </script>
   </head>
   <body <?php body_class(); ?> >
@@ -40,23 +84,29 @@
       <header class="nav__header">
 
         <div class="nav__title">
+          <?php echo get_bloginfo('name'); ?>
         </div>
 
+        <nav class="nav__primary">
+          <?php wp_nav_menu(); ?>
+        </nav>
+
         <div class="nav__icons">
-          <a href="#">
-            <?php include("src/img/sort.svg"); ?>
-            <?php include("src/img/close.svg"); ?>
-            <?php include("src/img/menu.svg"); ?>
-          </a>
+          <?php include("src/img/close2.svg"); ?>
+          <?php include("src/img/menu2.svg"); ?>
         </div>
 
         <div class="nav__overlay">
           <div class="nav__wrap">
-            <nav class="nav__primary">
-              <?php wp_nav_menu(); ?>
-            </nav>
-            <div class="nav__social">
-              <!-- Social -->
+            <div class="row">
+              <div class="columns small-10 medium-4 large-centered small-centered">
+                <nav class="nav__secondary" style="text-align: left">
+                  <?php wp_nav_menu(); ?>
+                </nav>
+                <div class="nav__social">
+                  <!-- Social -->
+                </div>
+              </div>
             </div>
           </div>
         </div>

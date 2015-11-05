@@ -1,5 +1,37 @@
+// Text Fonts
+
+@font-face {
+    font-family: "SF Text Bold";
+    src: url("../fonts/System San Francisco Text Bold.ttf");
+}
+@font-face {
+    font-family: "SF Text Heavy";
+    src: url("../fonts/System San Francisco Text Heavy.ttf");
+}
+@font-face {
+    font-family: "SF Text Medium";
+    src: url("../fonts/System San Francisco Text Medium.ttf");
+}
+@font-face {
+    font-family: "SF Text Regular";
+    src: url("../fonts/System San Francisco Text Regular.ttf");
+}
+@font-face {
+    font-family: "SF Text Thin";
+    src: url("../fonts/System San Francisco Text Thin.ttf");
+}
+
+// Display Fonts
+
+@font-face {
+    font-family: "SF Display Medium";
+    src: url("../fonts/System San Francisco Display Medium.ttf");
+}
+
 body {
-  background: #fafafa;
-  padding: 1rem;
-  font-family: 'Lucida Grande';
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  h1 {
+    font-family: "SF Display Medium", sans-serif;
+  }
 }
