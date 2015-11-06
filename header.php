@@ -99,7 +99,7 @@
         <div class="nav__overlay">
           <div class="nav__wrap">
             <div class="row">
-              <div class="columns small-10 medium-4 large-centered small-centered">
+              <div class="columns small-10 medium-5 large-3 large-centered small-centered">
                 <nav class="nav__secondary" style="text-align: left">
                   <?php wp_nav_menu(); ?>
                 </nav>
