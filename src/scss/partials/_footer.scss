@@ -1,0 +1,19 @@
+.footer {
+  &__wrapper {
+
+  }
+  &__copyright {
+    text-align: center;
+    padding: .5rem;
+    background: $__c9;
+    font-weight: bold;
+    display: none;
+  }
+  &__main {
+    background: $__c7;
+    h3 {
+      color: white;
+    }
+    padding: 4rem 0;
+  }
+}

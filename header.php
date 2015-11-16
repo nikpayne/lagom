@@ -84,7 +84,9 @@
       <header class="nav__header">
 
         <div class="nav__title">
-          <?php echo get_bloginfo('name'); ?>
+          <a href="<?php $url = home_url(); echo $url; ?>">
+            <h2 title="<?php echo get_bloginfo('description'); ?>"><?php echo get_bloginfo('name'); ?></h2>
+          </a>
         </div>
 
         <nav class="nav__primary">

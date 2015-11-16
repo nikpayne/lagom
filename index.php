@@ -4,6 +4,8 @@
   <div class="columns medium-8 medium-centered">
     <h1>Testing!</h1>
 
+    <?php get_template_part('partials/blog', 'categories'); ?>
+
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <h2><?php the_title(); ?></h2>
@@ -14,6 +16,7 @@
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
 
-    <?php get_footer(); ?>
   </div>
 </div>
+
+<?php get_footer(); ?>

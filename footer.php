@@ -1,9 +1,15 @@
-  <div class="footer-clear"></div>
-  <footer class="row no-max pad">
-    <p>
-      Copyright <?php echo date('Y') ?>
-    </p>
-  </footer>
-  <?php wp_footer(); ?>
-  </body>
+<footer class="footer__wrapper row">
+  <div class="footer__copyright">
+    <span>Copyright <?php echo date('Y') ?></span>
+  </div>
+  <div class="footer__main">
+    <div class="columns medium-8 medium-centered">
+      <h3>
+        Copyright <?php echo date('Y') ?>
+      </h3>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
