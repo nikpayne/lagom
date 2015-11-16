@@ -23,7 +23,3 @@
   </option>
  <?php } ?>
 </select>
-
-<pre>
-  <?php var_dump($categories); ?>
-</pre>
