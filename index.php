@@ -1,20 +1,37 @@
+<?php ini_set('display_errors', 1); ?>
+
 <?php @get_header(); ?>
 
 <div class="row">
   <div class="columns medium-8 medium-centered">
-    <h1>Testing!</h1>
 
-    <?php get_template_part('partials/blog', 'categories'); ?>
+    <div class="">
+      
+    </div>
 
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?php get_template_part('partials/blog', 'filter'); ?>
 
-    <h2><?php the_title(); ?></h2>
+    <!-- <?php get_template_part('partials/blog', 'select'); ?> -->
 
-    <?php the_content(); ?>
+    <?php get_template_part('partials/loading', 'widget'); ?>
 
-    <?php endwhile; else : ?>
-      <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-    <?php endif; ?>
+    <div id="main__content">
+
+      <?php if ( have_posts() ) : ?>
+
+        <?php while ( have_posts() ) : the_post(); ?>
+
+          <?php get_template_part('content'); ?>
+
+        <?php endwhile; ?>
+
+      <?php else : ?>
+
+        <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+      <?php endif; ?>
+      <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+
+    </div>
 
   </div>
 </div>

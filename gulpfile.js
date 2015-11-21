@@ -42,6 +42,7 @@ gulp.task('compile-css', function() {
 });
 
 gulp.task('watch', function() {
+  gulp.watch('./src/scss/partials/*.scss', ['compile-css'] );
   gulp.watch('./src/scss/**/*.scss', ['compile-css'] );
   gulp.watch('./src/js/**/*.js', ['compile-js'] );
 });

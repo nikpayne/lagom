@@ -1,27 +1,21 @@
-<svg class="btn-sort" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 282 231.225" enable-background="new 0 0 282 231.225" xml:space="preserve">
-<g id="Layer_1" display="none">
-	<g display="inline">
-		<rect y="7.779" width="282" height="44.999"/>
-		<rect y="93.113" width="282" height="45"/>
-		<rect y="178.446" width="282" height="44.999"/>
-	</g>
-</g>
-<g id="Layer_3" display="none">
-
-		<rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" display="inline" width="282.001" height="44.999"/>
-
-		<rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" display="inline" width="282" height="44.999"/>
-</g>
-<g id="Layer_4">
-	<rect x="33.166" y="7.779" width="58.333" height="58.332"/>
-	<rect x="111.833" y="7.779" width="58.333" height="58.332"/>
-	<rect x="190.5" y="7.779" width="58.333" height="58.331"/>
-	<rect x="33.166" y="86.446" width="58.333" height="58.332"/>
-	<rect x="111.833" y="86.447" width="58.333" height="58.332"/>
-	<rect x="190.5" y="86.447" width="58.333" height="58.332"/>
-	<rect x="33.167" y="165.112" width="58.333" height="58.332"/>
-	<rect x="111.834" y="165.112" width="58.333" height="58.332"/>
-	<rect x="190.501" y="165.112" width="58.333" height="58.332"/>
-</g>
+<svg class="btn-sort" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	x="0px" y="0px" viewBox="0 0 282 231" overflow="visible" enable-background="new 0 0 282 231"
+	xml:space="preserve">
+	<defs>
+	</defs>
+	<rect y="7.779" display="none" width="282" height="44.999"/>
+	<rect y="93.113" display="none" width="282" height="45"/>
+	<rect y="178.446" display="none" width="282" height="44.999"/>
+	<rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" display="none" width="282.001" height="44.999"/>
+	<rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" display="none" width="282" height="44.999"/>
+	<rect x="194.334" width="62.278" height="62.278"/>
+	<rect x="194.334" y="84.473" width="62.278" height="62.278"/>
+	<rect x="194.334" y="168.946" width="62.278" height="62.278"/>
+	<rect x="109.861" width="62.278" height="62.278"/>
+	<rect x="109.944" y="169.113" width="62.112" height="62.111"/>
+	<rect x="25.388" width="62.111" height="62.278"/>
+	<rect x="25.388" y="84.556" width="62.111" height="62.111"/>
+	<rect x="25.388" y="169.113" width="62.111" height="62.111"/>
+	<rect x="109.861" y="84.473" width="62.278" height="62.278"/>
 </svg>

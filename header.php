@@ -30,7 +30,7 @@
         $('.nav__wrap').on('mouseup', function(){
           return false;
         });
-      })
+      });
     }(jQuery));
 
     (function($) {
@@ -57,25 +57,6 @@
         prevScroll = currScroll;
       }
     }(jQuery));
-
-    // (function($) {
-    //   var prevScroll = 0,
-    //       headerOffset = $('.nav').height();
-    //
-    //   $(window).scroll(function () {
-    //
-    //     var currScroll = $(this).scrollTop();
-    //
-    //     if (currScroll > headerOffset) {
-    //       if (currScroll > prevScroll) {
-    //         $('.nav__header').addClass('hide-nav');
-    //       } else {
-    //         $('.nav__header').removeClass('hide-nav');
-    //       }
-    //     }
-    //     prevScroll = currScroll;
-    //   });
-    // }(jQuery));
     </script>
   </head>
   <body <?php body_class(); ?> >

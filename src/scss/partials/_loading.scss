@@ -1,0 +1,40 @@
+.loading {
+  &__wrapper {
+    position: absolute;
+    text-align: center;
+  }
+  &__main {
+    display: none;
+    padding-top: 100%;
+    position: relative;
+    text-align: center;
+    transition: all 250ms ease;
+    .loading__inner {
+      opacity: 0;
+      transition: opacity 250ms ease;
+    }
+    &.active {
+      display: block;
+      transition: all 250ms ease;
+      .loading__inner {
+        opacity: 1;
+        transition: all 250ms ease;
+      }
+    }
+  }
+  &__inner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+    background-color: rgba(149,214,63,.95);
+    text-align: center;
+    padding-top: rem-calc(54px);
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

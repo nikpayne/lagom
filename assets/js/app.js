@@ -1,2 +1,2 @@
-console.log("It can't bsssdee!");var butitisnot;
-function makeit(o){}console.log("hellosss world");for(var i=0;10>i;i++)console.log("hello monkeys!!!!!");
+!function(n){n(document).ready(function(){var t=n("#main__content"),a=n(".filter__link"),i=n(".select__list");a.on("click",function(a){a.preventDefault(),$el=n(this);var i=$el.attr("href");t.animate({opacity:"0.25"}),t.load(i+" #main__content",function(){t.animate({opacity:"1"})})}),i.change(function(){$option=n(this);var a=$option.prop("value");t.animate({opacity:"0.125"}),n(".loading__main").toggleClass("active"),t.load(a+" #main__content",function(){n(".loading__main").toggleClass("active"),t.animate({opacity:"1"})})})})}(jQuery);
+var test;

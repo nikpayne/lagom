@@ -1221,6 +1221,7 @@ meta.foundation-mq-topbar{font-family:"/only screen and (min-width:40.0625em)/";
 .xxlarge-text-center{text-align:center!important}
 .xxlarge-text-justify{text-align:justify!important}
 }
+.filter__item,.loading__inner,.loading__main,.loading__wrapper,.select__item,.select__list,.tab-bar-section{text-align:center}
 blockquote,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,li,ol,p,pre,td,th,ul{margin:0;padding:0}
 a{color:#008CBA;line-height:inherit;text-decoration:none}
 p,p.lead{line-height:1.6}
@@ -1303,7 +1304,7 @@ h2,h3{page-break-after:avoid}
 .tab-bar h1,.tab-bar h2,.tab-bar h3,.tab-bar h4{font-size:1.125rem}
 .left-small{border-right:solid 1px #1a1a1a;left:0}
 .right-small{border-left:solid 1px #1a1a1a;right:0}
-.tab-bar-section{height:2.8125rem;padding:0 .625rem;text-align:center}
+.tab-bar-section{height:2.8125rem;padding:0 .625rem}
 .tab-bar-section.left{text-align:left;left:0;right:2.8125rem}
 .tab-bar-section.right{text-align:right;left:2.8125rem;right:0}
 .tab-bar-section.middle{left:2.8125rem;right:2.8125rem}
@@ -1379,7 +1380,7 @@ ul.off-canvas-list li a:active,ul.off-canvas-list li a:hover{background:#242424}
 .left-submenu .back>a:before{content:"\AB";margin-right:.5rem;display:inline}
 .left-submenu.move-right,.left-submenu.offcanvas-overlap,.left-submenu.offcanvas-overlap-right{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate(0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .right-submenu{background:#333;margin:0;height:18.75rem;z-index:1002;-webkit-transform:translate3d(100%,0,0);-moz-transform:translate3d(100%,0,0);-ms-transform:translate(100%,0);-o-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);right:0;transition:transform .5s ease}
-.bottom-submenu,.top-submenu{-webkit-overflow-scrolling:touch;box-sizing:content-box;overflow-x:hidden;overflow-y:auto;position:absolute;height:18.75rem;z-index:1002;bottom:0;width:100%;-webkit-backface-visibility:hidden;top:0}
+.bottom-submenu,.top-submenu{-webkit-overflow-scrolling:touch;box-sizing:content-box;overflow-x:hidden;overflow-y:auto;position:absolute;height:18.75rem;z-index:1002;width:100%;-webkit-backface-visibility:hidden;bottom:0;top:0}
 .right-submenu *{-webkit-backface-visibility:hidden}
 .right-submenu .back>a{background:#444;margin:0}
 .right-submenu .back>a:hover{background:#303030;border-bottom:none;border-top:1px solid #5e5e5e}
@@ -1480,7 +1481,6 @@ td.hide-for-landscape,td.show-for-portrait,th.hide-for-landscape,th.show-for-por
 .touch td.show-for-touch,.touch th.show-for-touch,td.hide-for-touch,th.hide-for-touch{display:table-cell!important}
 .show-for-sr,.show-on-focus{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute!important;width:1px}
 .show-on-focus:active,.show-on-focus:focus{position:static!important;height:auto;width:auto;overflow:visible;clip:auto}
-.nav,body{position:relative}
 .print-only,.show-for-print{display:none!important}
 @media print{.print-only,.show-for-print{display:block!important}
 .hide-for-print,.hide-on-print{display:none!important}
@@ -1496,19 +1496,36 @@ td.show-for-print,th.show-for-print{display:table-cell!important}
 @font-face{font-family:"SF Text Regular";src:url('../fonts/System San Francisco Text Regular.ttf')}
 @font-face{font-family:"SF Text Thin";src:url('../fonts/System San Francisco Text Thin.ttf')}
 @font-face{font-family:"SF Display Medium";src:url('../fonts/System San Francisco Display Medium.ttf')}
-body{font-family:"Open Sans",sans-serif}
+body{font-family:"Open Sans",sans-serif;position:relative}
 .nav__title a h2,body h1{font-family:"SF Display Medium",sans-serif}
 .footer__copyright{text-align:center;padding:.5rem;background:#95d63f;font-weight:700;display:none}
 .footer__main{background:#32353d;padding:4rem 0}
 .footer__main h3{color:#fff}
-.nav{height:3.375rem;z-index:100}
+.loading__wrapper{position:absolute}
+.loading__main{display:none;padding-top:100%;position:relative;transition:all 250ms ease}
+.loading__main .loading__inner{opacity:0;transition:opacity 250ms ease}
+.loading__main.active{display:block;transition:all 250ms ease}
+.loading__main.active .loading__inner{opacity:1;transition:all 250ms ease}
+.loading__inner{position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;background-color:rgba(149,214,63,.95);padding-top:3.375rem}
+.loading__inner img{height:100%;width:100%}
+.filter__list{display:block;list-style:none;margin:1rem 0 0;height:3rem;overflow:scroll}
+.filter__list:first-child{display:block;font-size:.5rem;text-transform:uppercase;color:#32353d}
+.filter__list:first-child a{display:block;height:3rem;padding:.75rem}
+.filter__item{background-color:#fcfcfc;color:#95d63f;margin:0;border-radius:.25rem;display:block}
+.filter__item:hover{background-color:#95d63f}
+.filter__item:hover .filter__link{color:#fff}
+.filter__link{display:block;padding:.75rem;font-size:.5rem;text-transform:uppercase;color:#32353d}
+.select__list,.select__list:active{background-color:#000;color:#fff}
+.btn-sort{height:1.5rem}
+.select__list{display:block;margin:2rem 0;padding:1rem;outline:0;border:2px solid #000;border-radius:1.5rem;height:3rem}
+.select__item{background-color:#fcfcfc;color:#95d63f;margin:.5rem;border-radius:.25rem;display:block}
+.nav{position:relative;height:3.375rem;z-index:100}
 .nav__header{position:fixed;height:3.375rem;top:0;right:0;width:100%;background:rgba(255,255,255,.97);text-align:right;border-bottom:1px solid #f5f5f5;transition:all .2s ease}
 .nav__header.minimalist-mode:not(:hover){transition:all .2s ease;background:rgba(255,255,255,0);border-bottom:1px solid rgba(255,255,255,0)}
 .nav__header.minimalist-mode:not(:hover) .nav__primary,.nav__header.minimalist-mode:not(:hover) .nav__title{opacity:0;transition:opacity .3s ease}
 .nav__icons svg{cursor:pointer;position:fixed;display:block;top:.9375rem;right:1.125rem;height:1.55rem;width:1.55rem;z-index:100}
 .nav__overlay,.nav__wrap{height:100%;width:100%;top:0}
-.nav__icons svg rect{fill:#ddd;fill:#000;fill:#32353d}
-.nav__icons svg.btn-menu:hover rect{fill:#95d63f}
+.nav__icons svg.btn-menu rect{fill:#32353d}
 .nav__icons svg.btn-close{display:none}
 .nav__icons svg.btn-close rect{fill:#fff}
 .nav__title{padding:.5rem 0 .5rem 1rem;text-align:left;position:absolute;top:0;left:0}

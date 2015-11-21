@@ -40,13 +40,11 @@ $nav-hide: rem-calc(-54px);
       height: 1.55rem;
       width: 1.55rem;
       z-index: 100;
-      rect {
-        fill: #ddd;
-        fill: black;
-        fill: $__c7;
-      }
+
       &.btn-menu {
-        &:hover { rect { fill: $__c9; } }
+        rect {
+          fill: $__c7;
+        }
       }
       &.btn-close {
         display: none;
