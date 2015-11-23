@@ -5,10 +5,6 @@
 <div class="row">
   <div class="columns medium-8 medium-centered">
 
-    <div class="">
-
-    </div>
-
     <?php get_template_part('partials/blog', 'filter'); ?>
 
     <!-- <?php get_template_part('partials/blog', 'select'); ?> -->
