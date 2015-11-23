@@ -14,7 +14,7 @@ $nav-hide: rem-calc(-54px);
     width: 100%;
     background: rgba(255,255,255,.97);
     text-align: right;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f6f6f6;
     transition: all 200ms ease;
     &.minimalist-mode:not(:hover) {
       transition: all 200ms ease;
@@ -35,20 +35,20 @@ $nav-hide: rem-calc(-54px);
       cursor: pointer;
       position: fixed;
       display: block;
-      top: rem-calc(15px);
+      top: rem-calc(8px);
       right: rem-calc(18px);
-      height: 1.55rem;
-      width: 1.55rem;
       z-index: 100;
-
+      height: rem-calc(37px);
       &.btn-menu {
-        rect {
+        path, rect {
           fill: $__c7;
         }
       }
       &.btn-close {
         display: none;
-        rect { fill: white; }
+        path, rect {
+          fill: $__c7;
+        }
       }
     }
   }
@@ -99,7 +99,7 @@ $nav-hide: rem-calc(-54px);
         width: auto;
         display: inline-block;
         position: absolute;
-        right: 4rem;
+        right: 4.5rem;
         list-style-type: none;
         li.menu-item {
           position: relative;
@@ -123,6 +123,7 @@ $nav-hide: rem-calc(-54px);
             ul.sub-menu {
               opacity: 1;
               top: 3rem;
+              transition: opacity 400ms ease;
             }
           }
           ul.sub-menu {
@@ -132,6 +133,8 @@ $nav-hide: rem-calc(-54px);
             left: 0;
             margin: 0;
             width: 8rem;
+            top: -8rem;
+            transition: opacity 400ms ease;
             height: auto;
             text-align: left;
             background: white;

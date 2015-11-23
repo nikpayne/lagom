@@ -1,7 +1,8 @@
-<div class="" style="height: 1.55rem; text-align: center;">
+<div class="filter__button">
   <?php
-  $mydir = dirname(__FILE__).'/../src/img/sort.svg';
-  include_once( $mydir ); ?>
+  $icon = dirname(__FILE__).'/../src/img/sort.svg';
+  include( $icon );
+  ?>
 </div>
 
 <ul class="filter__list">
@@ -23,11 +24,6 @@
 
   $categories = get_categories( $args );
  ?>
-  <li class="filter__item filter__controller">
-    <a class="">
-      select your category
-    </a>
-  </li>
  <?php foreach ($categories as $category) { ?>
   <li class="filter__item" value="<?php echo $category->cat_name; ?>">
     <a class="filter__link" href="<?php echo get_category_link($category->term_id); ?>">

@@ -6,7 +6,7 @@
   <div class="columns medium-8 medium-centered">
 
     <div class="">
-      
+
     </div>
 
     <?php get_template_part('partials/blog', 'filter'); ?>
@@ -15,7 +15,7 @@
 
     <?php get_template_part('partials/loading', 'widget'); ?>
 
-    <div id="main__content">
+    <main id="main__content">
 
       <?php if ( have_posts() ) : ?>
 
@@ -31,7 +31,7 @@
       <?php endif; ?>
       <div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
 
-    </div>
+    </main>
 
   </div>
 </div>

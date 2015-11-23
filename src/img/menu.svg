@@ -1,23 +1,13 @@
-<svg
-  class="btn-menu"
-  version="1.1"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  x="0px" y="0px"
-  viewBox="0 0 282 231.225"
-  enable-background="new 0 0 282 231.225"
-  xml:space="preserve">
-  <g id="Layer_1">
-    <g>
-      <rect y="7.779" width="282" height="44.999"/>
-      <rect y="93.113" width="282" height="45"/>
-      <rect y="178.446" width="282" height="44.999"/>
+<svg class="btn-menu" width="37px" height="29px" viewBox="0 0 37 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Menu" sketch:type="MSLayerGroup" transform="translate(0.000000, 3.000000)" fill="#000000">
+            <rect id="Rectangle-1" sketch:type="MSShapeGroup" x="0" y="0" width="37" height="5" ></rect>
+            <rect id="Rectangle-1-Copy" sketch:type="MSShapeGroup" x="0" y="9" width="37" height="5"></rect>
+            <rect id="Rectangle-1-Copy-2" sketch:type="MSShapeGroup" x="0" y="18" width="37" height="5"></rect>
+        </g>
     </g>
-  </g>
-  <g id="Layer_3" display="none">
-
-    <rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" display="inline" width="282.001" height="44.999"/>
-
-    <rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" display="inline" width="282" height="44.999"/>
-  </g>
 </svg>

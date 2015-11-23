@@ -1,25 +1,12 @@
-<svg class="btn-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	viewBox="0 0 282 231.225" enable-background="new 0 0 282 231.225" xml:space="preserve">
-<g id="Layer_1" display="none">
-	<g display="inline">
-		<rect y="7.779" width="282" height="44.999"/>
-		<rect y="93.113" width="282" height="45"/>
-		<rect y="178.446" width="282" height="44.999"/>
-	</g>
-</g>
-<g id="Layer_3">
-	<rect x="0" y="93.113" transform="matrix(0.7071 0.7071 -0.7071 0.7071 123.0486 -65.84)" width="282.001" height="44.999"/>
-	<rect x="-0.001" y="93.113" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -40.4529 133.5636)" width="282" height="44.999"/>
-</g>
-<g id="Layer_4" display="none">
-	<rect x="33.166" y="7.779" display="inline" width="58.333" height="58.332"/>
-	<rect x="111.833" y="7.779" display="inline" width="58.333" height="58.332"/>
-	<rect x="190.5" y="7.779" display="inline" width="58.333" height="58.331"/>
-	<rect x="33.166" y="86.446" display="inline" width="58.333" height="58.332"/>
-	<rect x="111.833" y="86.447" display="inline" width="58.333" height="58.332"/>
-	<rect x="190.5" y="86.447" display="inline" width="58.333" height="58.332"/>
-	<rect x="33.167" y="165.112" display="inline" width="58.333" height="58.332"/>
-	<rect x="111.834" y="165.112" display="inline" width="58.333" height="58.332"/>
-	<rect x="190.501" y="165.112" display="inline" width="58.333" height="58.332"/>
-</g>
+<svg class="btn-close" width="37px" height="29px" viewBox="0 0 37 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Close" sketch:type="MSLayerGroup" transform="translate(3.000000, -1.000000)" fill="#000000">
+            <rect id="Rectangle-1-Copy-3" sketch:type="MSShapeGroup" transform="translate(15.500000, 15.500000) rotate(-315.000000) translate(-15.500000, -15.500000) " x="-3" y="13" width="37" height="5" rx="1"></rect>
+            <rect id="Rectangle-1-Copy-4" sketch:type="MSShapeGroup" transform="translate(15.500000, 15.500000) rotate(-45.000000) translate(-15.500000, -15.500000) " x="-3" y="13" width="37" height="5" rx="1"></rect>
+        </g>
+    </g>
 </svg>

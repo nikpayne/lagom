@@ -1,11 +1,12 @@
 <svg class="btn-menu" width="37px" height="29px" viewBox="0 0 37 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="sort-copy" sketch:type="MSLayerGroup" transform="translate(0.000000, 3.000000)" fill="#000000">
+        <g id="sort-copy-4" sketch:type="MSLayerGroup" transform="translate(0.000000, 3.000000)" fill="#000000">
             <rect id="Rectangle-13" sketch:type="MSShapeGroup" x="0" y="0" width="37" height="2" rx="1"></rect>
             <rect id="Rectangle-13-Copy-2" sketch:type="MSShapeGroup" x="0" y="0" width="2" height="23" rx="1"></rect>
             <rect id="Rectangle-13-Copy-3" sketch:type="MSShapeGroup" x="35" y="0" width="2" height="23" rx="1"></rect>
-            <rect id="Rectangle-13-Copy-4" sketch:type="MSShapeGroup" transform="translate(18.500000, 8.000000) rotate(-90.000000) translate(-18.500000, -8.000000) " x="17.5" y="-10.5" width="2" height="37" rx="1"></rect>
-            <rect id="Rectangle-13-Copy-6" sketch:type="MSShapeGroup" transform="translate(18.500000, 15.000000) rotate(-90.000000) translate(-18.500000, -15.000000) " x="17.5" y="-3.5" width="2" height="37" rx="1"></rect>
+            <rect id="Rectangle-13-Copy-4" sketch:type="MSShapeGroup" transform="translate(18.750000, 6.500000) rotate(-90.000000) translate(-18.750000, -6.500000) " x="17.25" y="-7.25" width="3" height="27.5" rx="1"></rect>
+            <rect id="Rectangle-13-Copy-6" sketch:type="MSShapeGroup" transform="translate(18.750000, 11.500000) rotate(-90.000000) translate(-18.750000, -11.500000) " x="17.25" y="-2.25" width="3" height="27.5" rx="1"></rect>
+            <rect id="Rectangle-13-Copy-7" sketch:type="MSShapeGroup" transform="translate(18.750000, 16.500000) rotate(-90.000000) translate(-18.750000, -16.500000) " x="17.25" y="2.75" width="3" height="27.5" rx="1"></rect>
             <rect id="Rectangle-13-Copy" sketch:type="MSShapeGroup" x="0" y="21" width="37" height="2" rx="1"></rect>
         </g>
     </g>

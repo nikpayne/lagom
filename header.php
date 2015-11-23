@@ -22,11 +22,25 @@
             open = false;
           }
         });
-        $('.nav__overlay').on('mouseup', function(){
+
+        function hideOverlay() {
           $('.nav__overlay, .btn-close').fadeOut(150);
           $('.btn-menu').fadeIn(150);
           open = false;
+        }
+
+        $('.nav__overlay').on('mouseup', function(){
+          hideOverlay();
         });
+
+        $('.nav__wrap').on('click', function(){
+          hideOverlay();
+        });
+
+        $('.nav__row').on('click', function(e){
+          e.preventDefault();
+        });
+
         $('.nav__wrap').on('mouseup', function(){
           return false;
         });
@@ -75,13 +89,13 @@
         </nav>
 
         <div class="nav__icons">
-          <?php include("src/img/close2.svg"); ?>
-          <?php include("src/img/menu2.svg"); ?>
+          <?php include("src/img/close.svg"); ?>
+          <?php include("src/img/menu.svg"); ?>
         </div>
 
         <div class="nav__overlay">
           <div class="nav__wrap">
-            <div class="row">
+            <div class="nav__row row">
               <div class="columns small-10 medium-5 large-3 large-centered small-centered">
                 <nav class="nav__secondary" style="text-align: left">
                   <?php wp_nav_menu(); ?>

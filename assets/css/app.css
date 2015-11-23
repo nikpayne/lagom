@@ -1221,7 +1221,6 @@ meta.foundation-mq-topbar{font-family:"/only screen and (min-width:40.0625em)/";
 .xxlarge-text-center{text-align:center!important}
 .xxlarge-text-justify{text-align:justify!important}
 }
-.filter__item,.loading__inner,.loading__main,.loading__wrapper,.select__item,.select__list,.tab-bar-section{text-align:center}
 blockquote,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,li,ol,p,pre,td,th,ul{margin:0;padding:0}
 a{color:#008CBA;line-height:inherit;text-decoration:none}
 p,p.lead{line-height:1.6}
@@ -1304,7 +1303,7 @@ h2,h3{page-break-after:avoid}
 .tab-bar h1,.tab-bar h2,.tab-bar h3,.tab-bar h4{font-size:1.125rem}
 .left-small{border-right:solid 1px #1a1a1a;left:0}
 .right-small{border-left:solid 1px #1a1a1a;right:0}
-.tab-bar-section{height:2.8125rem;padding:0 .625rem}
+.tab-bar-section{height:2.8125rem;padding:0 .625rem;text-align:center}
 .tab-bar-section.left{text-align:left;left:0;right:2.8125rem}
 .tab-bar-section.right{text-align:right;left:2.8125rem;right:0}
 .tab-bar-section.middle{left:2.8125rem;right:2.8125rem}
@@ -1497,49 +1496,55 @@ td.show-for-print,th.show-for-print{display:table-cell!important}
 @font-face{font-family:"SF Text Thin";src:url('../fonts/System San Francisco Text Thin.ttf')}
 @font-face{font-family:"SF Display Medium";src:url('../fonts/System San Francisco Display Medium.ttf')}
 body{font-family:"Open Sans",sans-serif;position:relative}
-.nav__title a h2,body h1{font-family:"SF Display Medium",sans-serif}
+body h1{font-family:"SF Display Medium",sans-serif}
 .footer__copyright{text-align:center;padding:.5rem;background:#95d63f;font-weight:700;display:none}
 .footer__main{background:#32353d;padding:4rem 0}
 .footer__main h3{color:#fff}
-.loading__wrapper{position:absolute}
-.loading__main{display:none;padding-top:100%;position:relative;transition:all 250ms ease}
+.loading__wrapper{position:absolute;text-align:center}
+.loading__main{display:none;padding-top:100%;position:relative;text-align:center;transition:all 250ms ease}
 .loading__main .loading__inner{opacity:0;transition:opacity 250ms ease}
 .loading__main.active{display:block;transition:all 250ms ease}
 .loading__main.active .loading__inner{opacity:1;transition:all 250ms ease}
-.loading__inner{position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;background-color:rgba(149,214,63,.95);padding-top:3.375rem}
+.loading__inner{position:fixed;top:0;right:0;bottom:0;left:0;z-index:90;background-color:rgba(149,214,63,.95);text-align:center;padding-top:3.375rem}
 .loading__inner img{height:100%;width:100%}
-.filter__list{display:block;list-style:none;margin:1rem 0 0;height:3rem;overflow:scroll}
-.filter__list:first-child{display:block;font-size:.5rem;text-transform:uppercase;color:#32353d}
-.filter__list:first-child a{display:block;height:3rem;padding:.75rem}
-.filter__item{background-color:#fcfcfc;color:#95d63f;margin:0;border-radius:.25rem;display:block}
+.filter__button{position:relative;height:2.3125rem;text-align:right;z-index:14;margin-right:.25rem}
+.filter__button .btn-sort path,.filter__button .btn-sort rect{fill:#32353d}
+.filter__list{position:absolute;top:0;z-index:12;display:none;list-style:none;margin-left:-1rem;margin-top:0;width:100%;height:100%;box-sizing:border-box;background-color:rgba(255,255,255,.95)}
+.article__header,.article__title{position:normal}
+.filter__item,.filter__link,.filter__list.active,.select__item,.select__list{display:block}
+.filter__item{box-sizing:border-box;background-color:none;color:#95d63f;margin:0;border-radius:.25rem;padding:0 2rem;text-align:center}
 .filter__item:hover{background-color:#95d63f}
 .filter__item:hover .filter__link{color:#fff}
-.filter__link{display:block;padding:.75rem;font-size:.5rem;text-transform:uppercase;color:#32353d}
+.filter__link{padding:1.5rem .75rem;font-size:1.25rem;border-bottom:1px solid #95d63f;text-transform:uppercase;color:#32353d;font-family:"SF Text Medium","Helvetica Neue",Helvetica,sans-serif}
 .select__list,.select__list:active{background-color:#000;color:#fff}
-.btn-sort{height:1.5rem}
-.select__list{display:block;margin:2rem 0;padding:1rem;outline:0;border:2px solid #000;border-radius:1.5rem;height:3rem}
-.select__item{background-color:#fcfcfc;color:#95d63f;margin:.5rem;border-radius:.25rem;display:block}
+.btn-sort{cursor:pointer}
+.select__list{margin:2rem 0;padding:1rem;text-align:center;outline:0;border:2px solid #000;border-radius:1.5rem;height:3rem}
+.select__item{background-color:#fcfcfc;color:#95d63f;margin:.5rem;border-radius:.25rem;text-align:center}
+.article__title{font-size:2rem}
+.article__title a{color:#32353d}
+.article__hero{position:relative;padding:56.25% 0 0;margin:0;background-color:rgba(0,0,0,.5);z-index:10}
+.article__hero-inner{z-index:8;position:absolute;top:0;right:0;bottom:0;left:0;background-size:cover;background-position:center center}
 .nav{position:relative;height:3.375rem;z-index:100}
-.nav__header{position:fixed;height:3.375rem;top:0;right:0;width:100%;background:rgba(255,255,255,.97);text-align:right;border-bottom:1px solid #f5f5f5;transition:all .2s ease}
+.nav__header{position:fixed;height:3.375rem;top:0;right:0;width:100%;background:rgba(255,255,255,.97);text-align:right;border-bottom:1px solid #f6f6f6;transition:all .2s ease}
 .nav__header.minimalist-mode:not(:hover){transition:all .2s ease;background:rgba(255,255,255,0);border-bottom:1px solid rgba(255,255,255,0)}
 .nav__header.minimalist-mode:not(:hover) .nav__primary,.nav__header.minimalist-mode:not(:hover) .nav__title{opacity:0;transition:opacity .3s ease}
-.nav__icons svg{cursor:pointer;position:fixed;display:block;top:.9375rem;right:1.125rem;height:1.55rem;width:1.55rem;z-index:100}
+.nav__icons svg{cursor:pointer;position:fixed;display:block;top:.5rem;right:1.125rem;z-index:100;height:2.3125rem}
 .nav__overlay,.nav__wrap{height:100%;width:100%;top:0}
-.nav__icons svg.btn-menu rect{fill:#32353d}
+.nav__icons svg.btn-menu path,.nav__icons svg.btn-menu rect{fill:#32353d}
 .nav__icons svg.btn-close{display:none}
-.nav__icons svg.btn-close rect{fill:#fff}
+.nav__icons svg.btn-close path,.nav__icons svg.btn-close rect{fill:#32353d}
 .nav__title{padding:.5rem 0 .5rem 1rem;text-align:left;position:absolute;top:0;left:0}
-.nav__title a h2{font-size:1.5rem;transition:all .3s ease;opacity:1}
+.nav__title a h2{font-family:"SF Display Medium",sans-serif;font-size:1.5rem;transition:all .3s ease;opacity:1}
 .nav__title a h2:hover{color:#95d63f;transition:all .3s ease}
 .nav__overlay{display:none;position:fixed;background:rgba(149,214,63,.96);overflow:auto;z-index:90}
 .nav__wrap{position:absolute;right:0}
 .nav__primary{max-width:1200px;height:3.375rem;overflow:hidden;margin:0 auto;transition:opacity .3s ease}
-.nav__primary .menu-main-menu-container ul.menu{margin:0;width:auto;display:inline-block;position:absolute;right:4rem;list-style-type:none}
+.nav__primary .menu-main-menu-container ul.menu{margin:0;width:auto;display:inline-block;position:absolute;right:4.5rem;list-style-type:none}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item{position:relative;display:inline-block;height:3.375rem;overflow:visible}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item a{padding:1.1rem .5rem .9rem;display:block;font-family:"SF Text Medium","Helvetica Neue",Helvetica,sans-serif;text-transform:uppercase;font-size:.75rem;color:#32353d;transition:color 150ms ease}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item a:hover{color:#95d63f;transition:color 150ms ease}
-.nav__primary .menu-main-menu-container ul.menu li.menu-item:hover ul.sub-menu{opacity:1;top:3rem}
-.nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu{position:absolute;display:inline-block;opacity:0;left:0;margin:0;width:8rem;height:auto;text-align:left;background:#fff;border:1px solid #95d63f}
+.nav__primary .menu-main-menu-container ul.menu li.menu-item:hover ul.sub-menu{opacity:1;top:3rem;transition:opacity .4s ease}
+.nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu{position:absolute;display:inline-block;opacity:0;left:0;margin:0;width:8rem;top:-8rem;transition:opacity .4s ease;height:auto;text-align:left;background:#fff;border:1px solid #95d63f}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item{display:block;height:auto}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item a{color:#9197a5;padding:.125rem .5rem;transition:color 150ms ease}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item a:hover{color:#95d63f;transition:color 150ms ease}
