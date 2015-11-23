@@ -1,4 +1,4 @@
-$height: rem-calc(37px);
+$height: rem-calc(27px);
 
 .filter {
   &__button {
@@ -6,10 +6,26 @@ $height: rem-calc(37px);
     height: $height;
     text-align: right;
     z-index: 14;
-    margin-right: rem-calc(4px);
+    // margin-right: rem-calc(4px);
     .btn-sort {
-      path, rect {
-        fill: $__c7;
+      height: rem-calc(27px);
+      transition: all 250ms ease;
+      path {
+        transition: all 250ms ease;
+        fill: $__c5; }
+      rect {
+        transition: all 250ms ease;
+        stroke: $__c5;
+      }
+      &:hover {
+        transition: all 250ms ease;
+        rect {
+          transition: all 250ms ease;
+          fill: $__c5; stroke: scale-color($__c5, $lightness: +25%); }
+        path {
+          transition: all 250ms ease;
+          fill: white;
+        }
       }
     }
   }
@@ -21,15 +37,13 @@ $height: rem-calc(37px);
     display: none;
     list-style: none;
     margin-left: -1rem;;
-    margin-top: $height;
+    margin-top: $height + 3rem;
     margin-top: 0;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: rgba(255,255,255,.95);
-    &.active {
-      display: block;
-    }
+    background-color: rgba(255,255,255,.97);
+    &.active { display: block; }
   }
   &__item {
     box-sizing: border-box;
@@ -41,26 +55,23 @@ $height: rem-calc(37px);
     text-align: center;
     display: block;
     &:hover {
-      background-color: $__c9;
-      .filter__link {
-        color: white;
-      }
+      // background-color: $__c9;
+      .filter__link { color: white; }
     }
   }
   &__link {
+    text-align: left;
     display: block;
     padding: 1.5rem .75rem;
     font-size: 1.25rem;
-    border-bottom: 1px solid $__c9;
+    border-bottom: 1px solid $__c6;
     text-transform: uppercase;
     color: $__c7;
     font-family: "SF Text Medium", "Helvetica Neue", Helvetica, sans-serif;
   }
 }
 
-.btn-sort {
-  cursor: pointer;
-}
+.btn-sort { cursor: pointer; }
 
 .select {
   &__list {
@@ -82,7 +93,6 @@ $height: rem-calc(37px);
   &__item {
     background-color: #fcfcfc;
     color: $__c9;
-    // padding: 1rem;
     margin: .5rem;
     border-radius: .25rem;
     text-align: center;

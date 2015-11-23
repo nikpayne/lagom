@@ -8,6 +8,11 @@
     $('.filter__button .btn-sort').on('click', function() {
       $('.filter__list').fadeToggle(150);
     })
+    $('.filter__button .btn-sort').hover(function() {
+      $('.filter__list').fadeToggle(150);
+    }, function(){
+      
+    })
 
     $cat_links.on('click', function(e) {
       e.preventDefault();

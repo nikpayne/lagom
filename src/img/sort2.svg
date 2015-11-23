@@ -1,0 +1,8 @@
+<svg class="btn-sort" width="67px" height="29px" viewBox="0 0 67 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <text id="SORT" sketch:type="MSTextLayer" font-family="San Francisco Text" font-size="16" font-weight="420" fill="#000000">
+            <tspan x="12" y="21">SORT</tspan>
+        </text>
+        <rect id="Rectangle-41" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup" x="1" y="1" width="65" height="27" rx="15"></rect>
+    </g>
+</svg>

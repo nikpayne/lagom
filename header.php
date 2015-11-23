@@ -90,7 +90,7 @@
 
         <div class="nav__icons">
           <?php include("src/img/close.svg"); ?>
-          <?php include("src/img/menu.svg"); ?>
+          <?php include("src/img/sort.svg"); ?>
         </div>
 
         <div class="nav__overlay">

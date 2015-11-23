@@ -35,20 +35,17 @@ $nav-hide: rem-calc(-54px);
       cursor: pointer;
       position: fixed;
       display: block;
-      top: rem-calc(8px);
-      right: rem-calc(18px);
+      top: rem-calc(13px);
+      right: rem-calc(14px);
       z-index: 100;
-      height: rem-calc(37px);
+      height: rem-calc(27px);
       &.btn-menu {
-        path, rect {
-          fill: $__c7;
-        }
+        rect { stroke: $__c6; }
+        path { fill: $__c6; }
       }
       &.btn-close {
         display: none;
-        path, rect {
-          fill: $__c7;
-        }
+        path, rect { fill: $__c6; }
       }
     }
   }
@@ -99,7 +96,7 @@ $nav-hide: rem-calc(-54px);
         width: auto;
         display: inline-block;
         position: absolute;
-        right: 4.5rem;
+        right: 5.5rem; //
         list-style-type: none;
         li.menu-item {
           position: relative;

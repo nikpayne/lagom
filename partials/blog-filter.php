@@ -1,6 +1,6 @@
 <div class="filter__button">
   <?php
-  $icon = dirname(__FILE__).'/../src/img/sort.svg';
+  $icon = dirname(__FILE__).'/../src/img/sort3.svg';
   include( $icon );
   ?>
 </div>
