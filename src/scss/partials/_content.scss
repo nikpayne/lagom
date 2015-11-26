@@ -3,11 +3,12 @@
 
   }
   &__header {
-    position: normal;
+    position: relative;
   }
   &__title {
     position: normal;
     font-size: 2rem;
+    text-align: center;
     a { color: $__c7; }
   }
   &__hero {
@@ -16,6 +17,7 @@
     margin: 0;
     background-color: rgba(0,0,0,.5);
     z-index: 10;
+    border: 1px solid #dfdfdf;
 
     &-inner {
       z-index: 8;

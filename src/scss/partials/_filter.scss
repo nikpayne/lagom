@@ -6,24 +6,24 @@ $height: rem-calc(27px);
     height: $height;
     text-align: right;
     z-index: 14;
-    // margin-right: rem-calc(4px);
+    margin-top: $height * 1.5;
     .btn-sort {
       height: rem-calc(27px);
-      transition: all 250ms ease;
+      transition: all 175ms ease;
       path {
-        transition: all 250ms ease;
+        transition: all 175ms ease;
         fill: $__c5; }
       rect {
-        transition: all 250ms ease;
+        transition: all 175ms ease;
         stroke: $__c5;
       }
       &:hover {
-        transition: all 250ms ease;
+        transition: all 175ms ease;
         rect {
-          transition: all 250ms ease;
-          fill: $__c5; stroke: scale-color($__c5, $lightness: +25%); }
+          transition: all 175ms ease;
+          fill: $__c5; stroke: 3 scale-color($__c5, $lightness: -25%); }
         path {
-          transition: all 250ms ease;
+          transition: all 175ms ease;
           fill: white;
         }
       }
@@ -56,11 +56,11 @@ $height: rem-calc(27px);
     display: block;
     &:hover {
       // background-color: $__c9;
-      .filter__link { color: white; }
+      .filter__link { color: black; }
     }
   }
   &__link {
-    text-align: left;
+    text-align: right;
     display: block;
     padding: 1.5rem .75rem;
     font-size: 1.25rem;
@@ -98,5 +98,4 @@ $height: rem-calc(27px);
     text-align: center;
     display: block;
   }
-
 }
