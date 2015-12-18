@@ -16,7 +16,7 @@
             <h2 title="<?php echo get_bloginfo('description'); ?>"><?php echo get_bloginfo('name'); ?></h2>
           </a> -->
           <div class="nav__logo">
-            <?php include("src/img/logo.svg"); ?>
+            <?php include("src/img/logo2.svg"); ?>
           </div>
         </div>
 
@@ -32,20 +32,22 @@
         <div class="nav__overlay">
           <div class="nav__wrap">
             <div class="nav__row row">
-              <div class="columns small-10 medium-5 large-3 large-centered small-centered">
+              <div class="columns small-10 medium-4 large-4">
                 <nav class="nav__secondary" style="text-align: left">
                   <?php wp_nav_menu(); ?>
                 </nav>
+              </div>
+              <div class="columns small-10 medium-4 large-4">
                 <section class="nav__widgets">
                   <?php if ( is_active_sidebar( 'overlay_nav' ) ) : ?>
-                  	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-                  		<?php dynamic_sidebar( 'overlay_nav' ); ?>
-                  	</div><!-- #primary-sidebar -->
+                    <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                      <?php dynamic_sidebar( 'overlay_nav' ); ?>
+                    </div><!-- #primary-sidebar -->
                   <?php endif; ?>
                 </section>
-                <div class="nav__social">
-                  <!-- Social -->
-                </div>
+              </div>
+              <div class="nav__social">
+                <!-- Social -->
               </div>
             </div>
           </div>

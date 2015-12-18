@@ -1545,7 +1545,7 @@ body h1{font-family:"SF Display Medium",sans-serif}
 .nav__title a h2{font-family:"SF Display Medium",sans-serif;font-size:1.5rem;transition:all .3s ease;opacity:1}
 .nav__title a h2:hover{color:#95d63f;transition:all .3s ease}
 .nav__overlay{display:none;background:rgba(149,214,63,.97);background:linear-gradient(to bottom,rgba(149,214,63,.97) 0,rgba(192,204,61,.97) 100%);overflow:auto;z-index:90}
-.nav__overlay:before{background:linear-gradient(to bottom,rgba(192,204,61,.97) 0,rgba(149,214,63,.97) 100%);content:'';display:block;left:0;opacity:0;z-index:-80;animation:flowpacity 6s infinite;-moz-animation:flowpacity 6s infinite;-webkit-animation:flowpacity 6s infinite;-o-animation:flowpacity 6s infinite}
+.nav__overlay:before{background:linear-gradient(to bottom,rgba(192,204,61,.97) 0,rgba(149,214,63,.97) 100%);content:'';display:block;left:0;opacity:0;z-index:-80;animation:flowpacity 4s infinite;-moz-animation:flowpacity 4s infinite;-webkit-animation:flowpacity 4s infinite;-o-animation:flowpacity 4s infinite}
 .nav__wrap{position:absolute;height:100%;width:100%;top:0;right:0}
 .nav__primary{max-width:1200px;height:3.375rem;overflow:hidden;margin:0 auto;transition:opacity .3s ease}
 .nav__primary .menu-main-menu-container ul.menu{margin:0;width:auto;display:inline-block;position:absolute;right:4rem;list-style-type:none}
@@ -1559,8 +1559,8 @@ body h1{font-family:"SF Display Medium",sans-serif}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item a:hover{color:#95d63f;transition:color 150ms ease}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:first-of-type a{padding-top:0}
 .nav__primary .menu-main-menu-container ul.menu li.menu-item ul.sub-menu li.menu-item:last-of-type a{padding-bottom:1rem}
+.nav__row{padding-top:3rem}
 .nav__secondary ul.menu{margin:0;width:auto;text-align:left;list-style-type:none}
-.nav__secondary ul.menu:first-child{margin-top:3rem}
 .nav__secondary ul.menu li.menu-item a{padding:1rem .5rem 0 0;display:block;font-family:"SF Display Medium","Helvetica Neue",Helvetica,sans-serif;font-size:3rem;color:#32353d;transition:color 150ms ease}
 .nav__secondary ul.menu li.menu-item a:hover{color:#fff;transition:color 150ms ease}
 .nav__secondary ul.menu li.menu-item ul.sub-menu{list-style-type:none;margin-left:0}

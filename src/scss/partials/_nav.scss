@@ -12,6 +12,7 @@ $nav-border: #f6f6f6;
   position: relative;
   height: $nav-height;
   z-index: 100;
+
   &__logo {
     position: absolute;
     left: rem-calc(2px);
@@ -53,8 +54,6 @@ $nav-border: #f6f6f6;
       z-index: 100;
       height: rem-calc(50px);
       &.btn-menu {
-        // rect { stroke: $__c6; }
-        // path { fill: $__c6; }
         g.outline {
           rect { fill: none; }
         }
@@ -86,7 +85,7 @@ $nav-border: #f6f6f6;
     display: none;
     position: fixed;
     top: 0;
-    
+
     height: 100%;
     width: 100%;
     background: rgba(0,0,0,0.86);
@@ -106,10 +105,10 @@ $nav-border: #f6f6f6;
       left: 0;
       opacity: 0;
       z-index: -80;
-      animation: flowpacity 6s infinite;
-      -moz-animation: flowpacity 6s infinite; /* Firefox */
-      -webkit-animation: flowpacity 6s infinite; /* Safari and Chrome */
-      -o-animation: flowpacity 6s infinite; /* Opera */
+      animation: flowpacity 4s infinite;
+      -moz-animation: flowpacity 4s infinite; /* Firefox */
+      -webkit-animation: flowpacity 4s infinite; /* Safari and Chrome */
+      -o-animation: flowpacity 4s infinite; /* Opera */
     }
   }
   &__wrap {
@@ -203,6 +202,9 @@ $nav-border: #f6f6f6;
       }
     }
   }
+  &__row {
+    padding-top: 3rem;
+  }
   &__secondary {
     ul.menu {
       margin: 0;
@@ -210,7 +212,7 @@ $nav-border: #f6f6f6;
       text-align: left;
       list-style-type: none;
       &:first-child {
-        margin-top: 3rem;
+        // margin-top: 3rem;
       }
       li.menu-item {
         a {
